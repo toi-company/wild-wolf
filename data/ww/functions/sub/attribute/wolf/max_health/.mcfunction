@@ -1,0 +1,1 @@
+$execute as @a[tag=entry] run attribute @s generic.max_health base set $(max_health)

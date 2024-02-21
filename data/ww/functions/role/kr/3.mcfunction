@@ -1,0 +1,1 @@
+$title @s actionbar [{"selector":"@e[scores={player_id=$(id)}]"},{"color":"blue","text":" 祈願可能人数:"},{"color":"blue","score":{"name":"@s","objective":"kn"}},{"color":"blue","text":"人"}]

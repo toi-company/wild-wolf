@@ -1,0 +1,2 @@
+# info
+tellraw @s [{"text":"function ww:settings/role/create   |   役職の追加"},{"text":"\nfunction ww:settings/role/create {id:○,name:○○,ur_name:○○,color:○○,ur_color:○○,vcondition:○○,value:○}"},{"text":"\nfunction ww:settings/role/delete   |   役職の削除"},{"text":"\nfunction ww:settings/role/value   |   役職人数の変更"},{"text":"\nfunction ww:settings/game/reserve/   |   準備時間の変更"}]

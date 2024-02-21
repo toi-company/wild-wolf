@@ -1,0 +1,2 @@
+execute store result storage ww:settings max_health double 1 run scoreboard players get #max_health_set temporary
+tellraw @s[tag=host] ["",{"text":"設定/Settings -人狼最大体力-\n"},{"text":"・1加算","color":"green","clickEvent":{"action":"run_command","value":"/function ww:sub/settings/attribute/max_helath/add"}},{"text":"\n"},{"text":"・1減算","color":"red","clickEvent":{"action":"run_command","value":"/function ww:sub/settings/attribute/max_helath/remove"}},{"text":"\n"},{"text":"現在の人狼最大体力:","color":"yellow"},{"score":{"name":"#max_health_set","objective":"temporary"}},{"text":"\n"}]

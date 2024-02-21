@@ -1,0 +1,1 @@
+function ww:item/clear/day/1 with storage ww:settings shop

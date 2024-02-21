@@ -1,0 +1,1 @@
+$execute as @e[tag=skeleton_spawn,tag=$(map)] at @s run summon skeleton ~ ~ ~ {Health:$(skeleton_health)f,HandItems:[{id:"minecraft:air",Count:1b},{}],Attributes:[{Name:"generic.max_health",Base:$(skeleton_health)},{Name:"generic.attack_damage",Base:1},{Name:"generic.movement_speed",Base:0.2}]}

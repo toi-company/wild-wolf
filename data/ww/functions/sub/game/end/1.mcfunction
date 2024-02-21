@@ -1,0 +1,1 @@
+$function ww:sub/game/end/2 with storage wherewolf: roles[$(role)]

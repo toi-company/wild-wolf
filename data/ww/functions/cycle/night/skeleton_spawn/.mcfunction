@@ -1,0 +1,1 @@
+function ww:cycle/night/skeleton_spawn/1 with storage ww:settings

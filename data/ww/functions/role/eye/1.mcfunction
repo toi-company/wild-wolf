@@ -1,0 +1,2 @@
+$execute if entity @a[tag=eye] store result storage wherewolf: roles[$(role)].eye_id int 1 run scoreboard players get @r[tag=eye] player_id
+$function ww:role/eye/2 with storage wherewolf: roles[$(role)]

@@ -1,0 +1,1 @@
+function ww:sub/game/start/map/ with storage ww:settings
