@@ -19,8 +19,8 @@ function ww:sub/attribute/wolf/attack_damage/ with storage ww:settings
 function ww:sub/attribute/wolf/max_health/ with storage ww:settings
 
 # item
-execute as @a[tag=entry,nbt={Inventory:[{tag:{CustomModelData:2}}]}] if score #day_time temporary matches 1.. run function ww:item/clear/day/
-execute as @a[tag=entry,nbt={Inventory:[{tag:{CustomModelData:2}}]}] if score #night_time temporary matches 1.. run function ww:item/clear/night/
+execute as @a[tag=entry,predicate=ww:inventory] if score #day_time temporary matches 1.. run function ww:item/clear/day/
+execute as @a[tag=entry,predicate=ww:inventory] if score #night_time temporary matches 1.. run function ww:item/clear/night/
 
 # inGroundkill
 kill @e[nbt={inGround:true}]
