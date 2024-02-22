@@ -13,8 +13,8 @@ scoreboard players set @a role -1
 scoreboard players set @a ur 0
 scoreboard players set @a kn 0
 #kill @a[tag=entry]
-effect clear @a
-gamemode adventure @a
+effect clear @a[tag=entry]
+gamemode adventure @a[tag=entry]
 function ww:cycle/day/skeleton_kill/
 time set 6000
 clear @a[tag=entry]
