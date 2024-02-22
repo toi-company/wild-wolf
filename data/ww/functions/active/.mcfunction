@@ -17,6 +17,9 @@ scoreboard players add @a leave 0
 # role_list
 function ww:role_list/
 
+#spectator
+execute as @a[tag=spectator] run tag @s remove entry
+
 #shop
 execute if entity @e[tag=combat_spawn] as @e[tag=combat_spawn] at @s run tp @e[sort=nearest,limit=1,type=villager,tag=combat_spawn] ^ ^ ^ facing entity @a[limit=1,tag=host]
 execute if entity @e[tag=combat_spawn] as @e[tag=combat_spawn] at @s run tag @e[tag=combat_spawn] remove combat_spawn

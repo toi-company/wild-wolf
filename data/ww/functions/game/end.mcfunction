@@ -15,6 +15,7 @@ scoreboard players set @a kn 0
 #kill @a[tag=entry]
 effect clear @a[tag=entry]
 gamemode adventure @a[tag=entry]
+gamemode adventure @a[tag=spectator]
 function ww:cycle/day/skeleton_kill/
 time set 6000
 clear @a[tag=entry]
