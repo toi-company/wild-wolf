@@ -46,6 +46,7 @@ gamerule sendCommandFeedback true
 gamerule showDeathMessages false
 gamerule doMobLoot false
 gamerule doWeatherCycle false
+gamerule naturalRegeneration true
 
 # team
 
