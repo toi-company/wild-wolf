@@ -23,6 +23,6 @@ scoreboard players set #turn temporary -1
 scoreboard players set #reserve_timer temporary -1
 tag @a remove tenkei
 tag @a remove knight
-team leave @s
+team leave @a[tag=entry]
 
 title @a title "試合終了"
