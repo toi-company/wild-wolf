@@ -49,6 +49,10 @@ gamerule doWeatherCycle false
 gamerule naturalRegeneration true
 
 # team
+team add game
+team modify game nametagVisibility never
+team modify game friendlyFire true
+team modify game seeFriendlyInvisibles false
 
 # data
 scoreboard players add #temp_load_data temporary 0
