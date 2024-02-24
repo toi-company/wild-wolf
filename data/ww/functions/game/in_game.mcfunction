@@ -4,6 +4,8 @@ execute if entity @e[scores={death_count=1..}] as @e[scores={death_count=1..}] r
 
 # vcondition
 function ww:functions/vcondition/
+execute if data storage condition: timer run function ww:functions/vcondition/timer
+execute if data storage condition: turn run function ww:functions/vcondition/turn
 
 # particle
 execute as @e[type=marker] at @s run particle dust 1 1 1 1 ~ ~ ~ 0.225 0.1 0.225 0 5

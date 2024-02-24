@@ -15,7 +15,9 @@ scoreboard players add @a ur_cooltime 0
 scoreboard players add @a leave 0
 
 # role_list
-function ww:role_list/
+execute if score #role_list_time temporary matches 10.. run function ww:role_list/
+execute if score #role_list_time temporary matches 10.. run scoreboard players set #role_list_time temporary 0
+scoreboard players add #role_list_time temporary 1
 
 #spectator
 execute as @a[tag=spectator] run tag @s remove entry

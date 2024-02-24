@@ -22,6 +22,8 @@ time set 6000
 clear @a[tag=entry]
 scoreboard players set #turn temporary -1
 scoreboard players set #reserve_timer temporary -1
+scoreboard players set #temp_game_time temporary 0
+scoreboard players set #temp_game_time_tick temporary 0
 tag @a remove tenkei
 tag @a remove knight
 team leave @a[tag=entry]
