@@ -42,7 +42,7 @@ gamerule doDaylightCycle false
 gamerule doImmediateRespawn true
 gamerule keepInventory true
 gamerule commandBlockOutput false
-gamerule sendCommandFeedback true
+gamerule sendCommandFeedback false
 gamerule showDeathMessages false
 gamerule doMobLoot false
 gamerule doWeatherCycle false
