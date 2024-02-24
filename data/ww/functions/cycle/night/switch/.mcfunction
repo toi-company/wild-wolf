@@ -10,4 +10,5 @@ tellraw @a [{"score":{"objective": "temporary","name": "#turn"}},{"text":"日目
 title @a title [{"text":"夜","color":"dark_blue","bold":true,"italic":false}]
 title @a subtitle [{"text":"Night Time","color":"yellow","bold":true,"italic":false}]
 tag @a[tag=vampire_alive] add knight
+execute if score #turn temporary matches ..3 run give @a[tag=scientist_alive] glass_bottle 1
 function ww:cycle/night/skeleton_spawn/

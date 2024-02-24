@@ -6,6 +6,10 @@ execute store result storage ww:settings shop.accomplice_eye_price int 1 run sco
 execute store result storage ww:settings shop.holy_cross_price int 1 run scoreboard players get #shop_holy_cross_price temporary
 execute store result storage ww:settings shop.eye_of_providence_price int 1 run scoreboard players get #shop_eye_of_providence_price temporary
 execute store result storage ww:settings shop.spellbook_tenkei_price int 1 run scoreboard players get #shop_spellbook_tenkei_price temporary
+execute store result storage ww:settings shop.emerald_glass_bottle_price int 1 run scoreboard players get #shop_emerald_glass_bottle_price temporary
+execute store result storage ww:settings shop.glass_bottle_damage_potion_price int 1 run scoreboard players get #shop_glass_bottle_damage_potion_price temporary
+execute store result storage ww:settings shop.glass_bottle_invisible_potion_price int 1 run scoreboard players get #shop_glass_bottle_invisible_potion_price temporary
+execute store result storage ww:settings shop.glass_bottle_slowness_potion_price int 1 run scoreboard players get #shop_glass_bottle_slowness_potion_price temporary
 
 function ww:shop/data/support/append with storage ww:settings shop
 

@@ -16,6 +16,12 @@ execute as @e[type=marker] at @s if entity @a[distance=0..1] run function ww:rol
 # kr
 execute as @e[type=marker] at @s if entity @a[distance=0..1] run function ww:role/kr/
 
+# glass_bottle
+execute as @a[nbt={Inventory:[{id:"minecraft:glass_bottle"}]}] if entity @s[tag=!scientist_alive] run function ww:item/clear/item/glass_bottle/ with storage ww:settings shop
+
+# damage_potion
+execute as @a[nbt={active_effects:[{id:"minecraft:unluck",amplifier:20b}]}] run function ww:item/damage_potion/
+
 # wolf attribute
 function ww:sub/attribute/wolf/attack_damage/ with storage ww:settings
 function ww:sub/attribute/wolf/max_health/ with storage ww:settings

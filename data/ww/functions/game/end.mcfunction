@@ -27,6 +27,7 @@ scoreboard players set #temp_game_time temporary 0
 scoreboard players set #temp_game_time_tick temporary 0
 tag @a remove tenkei
 tag @a remove knight
+tag @a remove allergy
 team leave @a[tag=entry]
 
 title @a title "試合終了"

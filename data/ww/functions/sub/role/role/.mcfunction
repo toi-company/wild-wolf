@@ -9,6 +9,7 @@ $execute if entity @a[tag=role] as @a[tag=role] run tag @s add $(vcondition)_ali
 execute if entity @a[tag=player_id] as @a[tag=player_id] run scoreboard players operation @s player_id = #player_id temporary
 execute if entity @a[tag=player_id] as @a[tag=player_id] run scoreboard players add #player_id temporary 1
 $execute if entity @a[tag=role] as @a[tag=role] run tellraw @s [{"text":"あなたの役職は、"},{"text":"$(view_name)","color":"$(color)"},{"text":"です。"}]
+$execute if entity @a[tag=role] as @a[tag=role] run tellraw @s [{"text":"$(lore)","color":"$(color)"}]
 execute if entity @a[tag=role] as @a[tag=role] run tag @s remove player
 execute if entity @a[tag=role] as @a[tag=role] run tag @s remove role
 execute if entity @a[tag=player_id] as @a[tag=player_id] run tag @s remove role_player_id

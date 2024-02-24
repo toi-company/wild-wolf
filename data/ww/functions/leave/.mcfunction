@@ -12,4 +12,5 @@ gamemode adventure
 scoreboard players set @s leave 0
 tag @s remove tenkei
 tag @s remove knight
+tag @s remove allergy
 team leave @s

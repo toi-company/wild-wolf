@@ -7,3 +7,4 @@ tag @s remove scientist_alive
 clear @s[tag=entry]
 tag @s remove tenkei
 tag @s remove knight
+tag @s remove allergy
