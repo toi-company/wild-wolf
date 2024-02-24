@@ -60,7 +60,9 @@ execute if score #temp_load_data temporary matches 0 run data remove storage whe
 execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:0,name:"市民",ur_name:"市民",view_name:"市民",color:"green",ur_color:"green",vcondition:"ctz"}
 execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:1,name:"人狼",ur_name:"人狼",view_name:"人狼",color:"red",ur_color:"red",vcondition:wolf,value:1}
 execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:2,name:"狂人",ur_name:"狂人",view_name:"狂人",color:"red",ur_color:"red",vcondition:mad,value:0}
-execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:3,name:"狼憑き",ur_name:"人狼",view_name:"市民",color:"green",ur_color:"red",vcondition:ctz,value:0}
+execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:3,name:"吸血鬼",ur_name:"吸血鬼",view_name:"吸血鬼",color:"red",ur_color:"red",vcondition:vampire,value:0}
+execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:4,name:"狼憑き",ur_name:"人狼",view_name:"市民",color:"green",ur_color:"red",vcondition:ctz,value:0}
+
 execute if score #temp_load_data temporary matches 0 run scoreboard players add #temp_load_data temporary 1
 
 # create
@@ -71,21 +73,22 @@ execute if score #create temporary matches 0 run scoreboard players set #skeleto
 execute if score #create temporary matches 0 run scoreboard players set #day_time_set temporary 120
 execute if score #create temporary matches 0 run scoreboard players set #night_time_set temporary 120
 execute if score #create temporary matches 0 run data modify storage ww:settings item.wolf_axe_price set value 3
-execute if score #create temporary matches 0 run scoreboard players add #create temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_bow_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_arrow_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_stun_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_skeleton_sword_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_wolf_axe_price temporary 1
+execute if score #create temporary matches 0 run scoreboard players set #shop_bow_price temporary 2
+execute if score #create temporary matches 0 run scoreboard players set #shop_arrow_price temporary 2
+execute if score #create temporary matches 0 run scoreboard players set #shop_stun_price temporary 4
+execute if score #create temporary matches 0 run scoreboard players set #shop_skeleton_sword_price temporary 4
+execute if score #create temporary matches 0 run scoreboard players set #shop_wolf_axe_price temporary 3
 execute if score #create temporary matches 0 run scoreboard players set #shop_beef_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_speed_potion_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_invisible_potion_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_divination_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_knight_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_accomplice_eye_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_eye_of_providence_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_holy_cross_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_spellbook_tenkei_price temporary 1
+execute if score #create temporary matches 0 run scoreboard players set #shop_speed_potion_price temporary 2
+execute if score #create temporary matches 0 run scoreboard players set #shop_invisible_potion_price temporary 3
+execute if score #create temporary matches 0 run scoreboard players set #shop_divination_price temporary 5
+execute if score #create temporary matches 0 run scoreboard players set #shop_knight_price temporary 3
+execute if score #create temporary matches 0 run scoreboard players set #shop_accomplice_eye_price temporary 5
+execute if score #create temporary matches 0 run scoreboard players set #shop_eye_of_providence_price temporary 4
+execute if score #create temporary matches 0 run scoreboard players set #shop_holy_cross_price temporary 3
+execute if score #create temporary matches 0 run scoreboard players set #shop_spellbook_tenkei_price temporary 2
+
+execute if score #create temporary matches 0 run scoreboard players add #create temporary 1
 
 # load
 tellraw @a {"text":"load complete ww:","color":"yellow"}

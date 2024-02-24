@@ -9,4 +9,5 @@ scoreboard players add #turn temporary 1
 tellraw @a [{"score":{"objective": "temporary","name": "#turn"}},{"text":"日目の夜がやってきました。"}]
 title @a title [{"text":"夜","color":"dark_blue","bold":true,"italic":false}]
 title @a subtitle [{"text":"Night Time","color":"yellow","bold":true,"italic":false}]
+tag @a[tag=vampire_alive] add knight
 function ww:cycle/night/skeleton_spawn/

@@ -1,0 +1,27 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "mainhand": {
+                "items": [
+                  "minecraft:nether_star"
+                ],
+                "nbt": "{CustomModelData:2}"
+              }
+            }
+          },
+          "entity": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[\"vampire_alive\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "ww:item/vampire/1"
+    }
+  }
+  

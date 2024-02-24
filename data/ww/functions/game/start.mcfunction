@@ -1,6 +1,7 @@
 tag @a remove ctz_alive
 tag @a remove wolf_alive
 tag @a remove mad_alive
+tag @a remove vampire_alive
 function ww:game/end
 tag @a[tag=entry] add player
 tag @a[tag=entry] add role_player_id

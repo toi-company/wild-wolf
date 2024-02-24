@@ -9,6 +9,7 @@ function ww:game/end/tp with storage ww:settings
 tag @a remove wolf_alive
 tag @a remove ctz_alive
 tag @a remove mad_alive
+tag @a remove vampire_alive
 scoreboard players set @a role -1
 scoreboard players set @a ur 0
 scoreboard players set @a kn 0
