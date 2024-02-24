@@ -6,6 +6,7 @@ tag @s remove mad_alive
 tag @s remove wolf_alive
 tag @s remove ctz_alive
 tag @s remove vampire_alive
+tag @s remove scientist_alive
 scoreboard players set @s ur 0
 gamemode adventure
 scoreboard players set @s leave 0
