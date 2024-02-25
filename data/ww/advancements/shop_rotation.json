@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "player": {
+            "nbt": "{SelectedItem:{id:\"minecraft:villager_spawn_egg\"}}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "ww:shop/rotation"
+    }
+  }
+  
