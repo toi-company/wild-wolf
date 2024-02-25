@@ -24,3 +24,4 @@ execute if score #ur_vampire temporary matches 1 run playsound entity.ender_drag
 execute if score #ur_scientist temporary matches 1 run playsound entity.ender_dragon.shoot player @s
 scoreboard players set @s ur_cooltime 20
 scoreboard players remove @s ur 1
+say a2(main)
