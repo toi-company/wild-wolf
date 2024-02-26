@@ -13,8 +13,6 @@ execute store success score #ur_wolf temporary if data storage ur: decision.wolf
 execute store success score #ur_vampire temporary if data storage ur: decision.vampire
 execute store success score #ur_scientist temporary if data storage ur: decision.scientist
 execute unless score #ur_ctz temporary matches 1 store success score #ur_ctz temporary if data storage ur: decision.mad
-#$execute if score #ur_ctz temporary matches 1 run tellraw @s [{"selector":"@a[scores={player_id=$(ur_id)}]"},{"text":"は、"},{"color":"green","text":"人間です。"}]
-#$execute if score #ur_wolf temporary matches 1 run tellraw @s [{"selector":"@a[scores={player_id=$(ur_id)}]"},{"text":"は、"},{"color":"red","text":"人間ではありません。"}]
 $tellraw @s [{"selector":"@a[scores={player_id=$(ur_id)}]"},{"text":"は、"},{"color":"$(ur_color)","text":"$(ur_name)"},{"text":"です。"}]
 $execute as @a[scores={player_id=$(ur_id)}] if entity @s[tag=tenkei] run tellraw @s {"color":"red","text":"あなたは誰かに占われました。"}
 $execute as @a[scores={player_id=$(ur_id)}] if entity @s[tag=tenkei] run playsound entity.ender_dragon.shoot player @s
@@ -24,4 +22,3 @@ execute if score #ur_vampire temporary matches 1 run playsound entity.ender_drag
 execute if score #ur_scientist temporary matches 1 run playsound entity.ender_dragon.shoot player @s
 scoreboard players set @s ur_cooltime 20
 scoreboard players remove @s ur 1
-say a2(main)
