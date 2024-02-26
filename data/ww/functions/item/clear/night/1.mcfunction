@@ -14,4 +14,4 @@ execute if entity @s[nbt={Inventory:[{id:"minecraft:end_crystal"}]}] run functio
 execute if entity @s[nbt={Inventory:[{id:"minecraft:sunflower"}]}] run function ww:item/clear/item/providence/ with storage ww:settings shop
 
 # 天啓の呪符
-execute if entity @s[nbt={Inventory:[{id:"minecraft:paper"}]}] run function ww:item/clear/item/tenkie/ with storage shop
+execute if entity @s[nbt={Inventory:[{id:"minecraft:paper"}]}] run function ww:item/clear/item/tenkei/ with storage shop
