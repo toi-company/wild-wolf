@@ -1,1 +1,1 @@
-$give @s cow_spawn_egg{display:{Name:'{"text":"スケルトンスポナー"}'},EntityTag:{id:"minecraft:armor_stand",NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["skeleton_spawn","$(map)"]}}
+$give @s cow_spawn_egg{display:{Name:'{"text":"スケルトンスポナー"}'},EntityTag:{id:"minecraft:marker",Tags:["skeleton_spawn","$(map)"]}}
