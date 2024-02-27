@@ -74,7 +74,7 @@ execute if score #create temporary matches 0 run scoreboard players set #max_hea
 execute if score #create temporary matches 0 store result storage ww:settings max_health double 1 run scoreboard players get #max_health_set temporary
 execute if score #create temporary matches 0 run scoreboard players set #skeleton_health_set temporary 4
 execute if score #create temporary matches 0 run scoreboard players set #day_time_set temporary 120
-execute if score #create temporary matches 0 run scoreboard players set #night_time_set temporary 120
+execute if score #create temporary matches 0 run scoreboard players set #night_time_set temporary 180
 execute if score #create temporary matches 0 run data modify storage ww:settings item.wolf_axe_price set value 3
 execute if score #create temporary matches 0 run scoreboard players set #shop_bow_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_arrow_price temporary 2
@@ -94,6 +94,7 @@ execute if score #create temporary matches 0 run scoreboard players set #shop_em
 execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_damage_potion_price temporary 5
 execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_invisible_potion_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_slowness_potion_price temporary 2
+execute if score #create temporary matches 0 run scoreboard players set #skeleton_max_set temporary 50
 
 execute if score #create temporary matches 0 run scoreboard players add #create temporary 1
 
