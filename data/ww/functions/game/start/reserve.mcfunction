@@ -1,3 +1,5 @@
+#ww:game/start→ww:game/start/reserve→ww:game/reserve(常時実行)→ww:game/start/
+#ww:game/start→ww:game/start/reserve→ww:game/spectator
 title @a title ""
 scoreboard players set #player_id temporary 1
 scoreboard players set @a player_id 0

@@ -1,3 +1,5 @@
+#ww:game/start→ww:game/start/reserve→ww:game/reserve(常時実行)→ww:game/start/
+#ww:game/start→ww:game/start/reserve→ww:game/spectator
 scoreboard objectives setdisplay sidebar
 scoreboard players set @a death_count 0
 function ww:sub/game/start/regeneration with storage ww:settings

@@ -1,3 +1,5 @@
+#ww:game/start→ww:game/start/reserve→ww:game/reserve(常時実行)→ww:game/start/
+#ww:game/start→ww:game/start/reserve→ww:game/spectator
 tag @a remove ctz_alive
 tag @a remove wolf_alive
 tag @a remove mad_alive
