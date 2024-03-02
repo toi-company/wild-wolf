@@ -60,7 +60,7 @@ scoreboard players add #temp_load_data temporary 0
 execute if score #temp_load_data temporary matches 0 run data remove storage wherewolf: roles
 execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:0,name:"市民",ur_name:"市民",view_name:"市民",color:"green",ur_color:"green",vcondition:"ctz",lore:"仲間と協力して生き延びよう！"}
 execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:1,name:"人狼",ur_name:"人狼",view_name:"人狼",color:"red",ur_color:"red",vcondition:wolf,value:1,lore:"自身が人狼とばれないようにして自分以外の人々を全滅させよう！"}
-execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:2,name:"共犯者",ur_name:"共犯者",view_name:"共犯者",color:"red",ur_color:"red",vcondition:mad,value:0,lore:"人狼を探し当て、ともに勝利を掴み取ろう！"}
+execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:2,name:"共犯者",ur_name:"市民",view_name:"共犯者",color:"red",ur_color:"green",vcondition:mad,value:0,lore:"人狼を探し当て、ともに勝利を掴み取ろう！"}
 execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:3,name:"吸血鬼",ur_name:"吸血鬼",view_name:"吸血鬼",color:"red",ur_color:"red",vcondition:vampire,value:0,lore:"自身が吸血鬼だとばれないようにして試合終了時まで生き延びよう！"}
 execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:4,name:"狼憑き",ur_name:"人狼",view_name:"市民",color:"green",ur_color:"red",vcondition:ctz,value:0,lore:"仲間と協力して生き延びよう！"}
 execute if score #temp_load_data temporary matches 0 run data modify storage wherewolf: roles append value {id:5,name:"科学者",ur_name:"科学者",view_name:"科学者",color:"dark_green",ur_color:"dark_green",vcondition:scientist,value:0,lore:"ショップで買える様々な発明品を使い自分以外の人々を全滅させよう！"}
@@ -92,7 +92,7 @@ execute if score #create temporary matches 0 run scoreboard players set #shop_ey
 execute if score #create temporary matches 0 run scoreboard players set #shop_holy_cross_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_spellbook_tenkei_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_emerald_glass_bottle_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_damage_potion_price temporary 5
+execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_damage_potion_price temporary 3
 execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_invisible_potion_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_slowness_potion_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #skeleton_max_set temporary 50
