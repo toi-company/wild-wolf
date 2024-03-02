@@ -6,6 +6,7 @@ tellraw @a [{"text":"今回勝利した陣営は、"},{"color":"red","text":"人
 tellraw @a [{"color":"green","text":"村人:"},{"selector":"@a[tag=ctz]"}]
 tellraw @a [{"color":"red","text":"人狼:"},{"selector":"@a[tag=wolf]"},{"text":" "},{"color":"red","text":"共犯者:"},{"selector":"@a[tag=mad]"}]
 tellraw @a [{"color":"red","text":"吸血鬼:"},{"selector":"@a[tag=vampire]"}]
+tellraw @a [{"color":"red","text":"狼憑き:"},{"selector":"@a[scores={role=4}]"}]
 tellraw @a [{"color":"dark_green","text":"科学者"},{"selector":"@a[tag=scientist]"}]
 scoreboard players add @a[tag=wolf] win_count 1
 scoreboard players add @a[tag=mad] win_count 1
