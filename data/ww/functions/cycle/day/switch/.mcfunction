@@ -5,8 +5,8 @@ execute store result bossbar day_time max run scoreboard players get #day_time_s
 bossbar set night_time players
 bossbar set day_time players @a
 time set 6000
-title @a title [{"text":"昼","color":"yellow","bold":true,"italic":false}]
-title @a subtitle [{"text":"Day Time","color":"yellow","bold":true,"italic":false}]
+title @a title [{"text":"昼になりました","color":"yellow","bold":true,"italic":false}]
+title @a subtitle [{"text":"- ","color":"gold"},{"score":{"objective": "temporary","name": "#turn"},"color":"gold"},{"text":"日目 -","color":"gold"}]
 tellraw @a[tag=tenkei] {"text":"天啓の呪符の効果が切れた。"}
 tag @a remove knight
 tag @a remove tenkei

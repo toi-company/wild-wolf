@@ -2,12 +2,12 @@
 execute unless entity @a[tag=host] run tag @a add host
 
 # bossbar
-bossbar add day_time {"bold":true,"color":"yellow","italic":false,"text":"昼"}
-bossbar add night_time {"bold":true,"color":"dark_blue","italic":false,"text":"夜"}
+bossbar add day_time {"bold":true,"color":"yellow","italic":false,"text":"DAY TIME"}
+bossbar add night_time {"bold":true,"color":"blue","italic":false,"text":"NIGHT TIME"}
 bossbar set day_time color yellow
 bossbar set night_time color purple
-bossbar set day_time style notched_10
-bossbar set night_time style notched_10
+bossbar set day_time style notched_6
+bossbar set night_time style notched_6
 bossbar set day_time visible true
 bossbar set night_time visible true
 
@@ -47,6 +47,7 @@ gamerule showDeathMessages false
 gamerule doMobLoot false
 gamerule doWeatherCycle false
 gamerule naturalRegeneration true
+gamerule doMobSpawning false
 
 # team
 team add game
@@ -74,21 +75,21 @@ execute if score #create temporary matches 0 run scoreboard players set #max_hea
 execute if score #create temporary matches 0 store result storage ww:settings max_health double 1 run scoreboard players get #max_health_set temporary
 execute if score #create temporary matches 0 run scoreboard players set #skeleton_health_set temporary 4
 execute if score #create temporary matches 0 run scoreboard players set #day_time_set temporary 120
-execute if score #create temporary matches 0 run scoreboard players set #night_time_set temporary 180
+execute if score #create temporary matches 0 run scoreboard players set #night_time_set temporary 120
 execute if score #create temporary matches 0 run data modify storage ww:settings item.wolf_axe_price set value 3
 execute if score #create temporary matches 0 run scoreboard players set #shop_bow_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_arrow_price temporary 2
-execute if score #create temporary matches 0 run scoreboard players set #shop_stun_price temporary 4
-execute if score #create temporary matches 0 run scoreboard players set #shop_skeleton_sword_price temporary 4
-execute if score #create temporary matches 0 run scoreboard players set #shop_wolf_axe_price temporary 3
 execute if score #create temporary matches 0 run scoreboard players set #shop_beef_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_speed_potion_price temporary 2
-execute if score #create temporary matches 0 run scoreboard players set #shop_invisible_potion_price temporary 3
+execute if score #create temporary matches 0 run scoreboard players set #shop_skeleton_sword_price temporary 4
+execute if score #create temporary matches 0 run scoreboard players set #shop_stun_price temporary 2
+execute if score #create temporary matches 0 run scoreboard players set #shop_wolf_axe_price temporary 3
+execute if score #create temporary matches 0 run scoreboard players set #shop_speed_potion_price temporary 1
+execute if score #create temporary matches 0 run scoreboard players set #shop_invisible_potion_price temporary 4
 execute if score #create temporary matches 0 run scoreboard players set #shop_divination_price temporary 5
-execute if score #create temporary matches 0 run scoreboard players set #shop_knight_price temporary 3
+execute if score #create temporary matches 0 run scoreboard players set #shop_knight_price temporary 4
 execute if score #create temporary matches 0 run scoreboard players set #shop_accomplice_eye_price temporary 5
 execute if score #create temporary matches 0 run scoreboard players set #shop_eye_of_providence_price temporary 4
-execute if score #create temporary matches 0 run scoreboard players set #shop_holy_cross_price temporary 3
+execute if score #create temporary matches 0 run scoreboard players set #shop_holy_cross_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_spellbook_tenkei_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_emerald_glass_bottle_price temporary 1
 execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_damage_potion_price temporary 5

@@ -1,1 +1,1 @@
-$give @p allay_spawn_egg{EntityTag:{id:"minecraft:marker",data:{map:$(map),id:$(id)}}}
+$give @p allay_spawn_egg{EntityTag:{id:"minecraft:marker",data:{map:$(map),id:$(id)},CustomName:'{"text":"会議"}'}}

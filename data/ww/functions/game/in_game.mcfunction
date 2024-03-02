@@ -8,7 +8,7 @@ execute if data storage condition: timer run function ww:functions/vcondition/ti
 execute if data storage condition: turn run function ww:functions/vcondition/turn
 
 # particle
-execute as @e[type=marker] at @s run particle dust 1 1 1 1 ~ ~ ~ 0.225 0.1 0.225 0 5
+execute as @e[type=marker,name="会議"] at @s run particle dust 1 1 1 1 ~ ~ ~ 0.225 0.1 0.225 0 5
 
 # ur
 execute as @e[type=marker] at @s if entity @a[distance=0..1] run function ww:role/ur/

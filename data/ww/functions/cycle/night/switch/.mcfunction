@@ -7,8 +7,8 @@ bossbar set night_time players @a
 time set 18000
 scoreboard players add #turn temporary 1
 tellraw @a [{"score":{"objective": "temporary","name": "#turn"}},{"text":"日目の夜がやってきました。"}]
-title @a title [{"text":"夜","color":"dark_blue","bold":true,"italic":false}]
-title @a subtitle [{"text":"Night Time","color":"yellow","bold":true,"italic":false}]
+title @a title [{"text":"夜になりました","color":"dark_blue","bold":true,"italic":false}]
+title @a subtitle [{"text":"- ","color":"gold"},{"score":{"objective": "temporary","name": "#turn"},"color":"gold"},{"text":"日目 -","color":"gold"}]
 tag @a[tag=vampire_alive] add knight
 execute if score #turn temporary matches ..3 run give @a[tag=scientist_alive] glass_bottle 1
 function ww:cycle/night/skeleton_spawn/
