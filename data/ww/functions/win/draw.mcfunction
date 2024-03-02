@@ -8,6 +8,7 @@ tellraw @a [{"color":"red","text":"人狼:"},{"selector":"@a[tag=wolf]"},{"text"
 tellraw @a [{"color":"red","text":"吸血鬼:"},{"selector":"@a[tag=vampire]"}]
 tellraw @a [{"color":"red","text":"狼憑き:"},{"selector":"@a[scores={role=4}]"}]
 tellraw @a [{"color":"dark_green","text":"科学者"},{"selector":"@a[tag=scientist]"}]
+function ww:game/end
 execute as @a run tellraw @s [{"color":"yellow","text":"現在の勝利数:"},{"score":{"name":"@s","objective":"win_count"}}]
 tag @a remove ctz
 tag @a remove wolf

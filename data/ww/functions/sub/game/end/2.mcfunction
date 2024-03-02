@@ -1,5 +1,5 @@
 $data modify storage ww:end_win $(vcondition) set value true
-execute store success score #end_win_ctz temporary if data storage ww:end_win ctz
+execute unless entity @s[scores={role=4}] store success score #end_win_ctz temporary if data storage ww:end_win ctz
 execute store success score #end_win_wolf temporary if data storage ww:end_win wolf
 execute store success score #end_win_mad temporary if data storage ww:end_win mad
 execute store success score #end_win_vampire temporary if data storage ww:end_win vampire
