@@ -43,10 +43,11 @@ execute as @a[tag=!knight] run effect clear @s resistance
 
 # cycle
 execute if score #night_time temporary matches 0.. run function ww:cycle/night/active/
-execute if score #day_time temporary matches 0.. run function ww:cycle/day/active/
-execute if score #night_time temporary matches 0 run function ww:cycle/day/switch/
-execute if score #day_time temporary matches 0 run function ww:cycle/night/switch/
 execute if score #night_time temporary matches 0 run scoreboard players set #night_time_tick temporary 20
+execute if score #night_time temporary matches 0 run function ww:cycle/day/switch/
+execute if score #day_time temporary matches 0.. run function ww:cycle/day/active/
 execute if score #day_time temporary matches 0 run scoreboard players set #day_time_tick temporary 20
+execute if score #day_time temporary matches 0 run function ww:cycle/night/switch/
+
 # grenade
 function ww:item/grenade/
