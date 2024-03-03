@@ -28,6 +28,7 @@ scoreboard objectives add kn dummy
 scoreboard objectives add kn_cooltime dummy
 scoreboard objectives add leave custom:leave_game
 scoreboard objectives add stun dummy
+scoreboard objectives add skip trigger "スキップ"
 
 # scoreboard players
 scoreboard players add #day_time temporary 0

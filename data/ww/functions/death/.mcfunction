@@ -8,3 +8,5 @@ clear @s[tag=entry]
 tag @s remove tenkei
 tag @s remove knight
 tag @s remove allergy
+tag @s remove skip
+tag @s remove alive

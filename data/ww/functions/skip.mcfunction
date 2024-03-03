@@ -1,0 +1,1 @@
+execute if entity @s[tag=skip] run function ww:skip_2

@@ -11,4 +11,9 @@ tellraw @a[tag=tenkei] {"text":"天啓の呪符の効果が切れた。"}
 tag @a remove knight
 tag @a remove tenkei
 tag @a remove has_tenkei
+tag @a remove skip
+tag @a[tag=alive] add skip
+scoreboard players reset @a skip
+scoreboard players enable @a[tag=alive] skip
+scoreboard players set #skip temporary 0
 function ww:cycle/day/skeleton_kill/
