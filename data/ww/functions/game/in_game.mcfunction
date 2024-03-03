@@ -11,10 +11,10 @@ execute if data storage condition: turn run function ww:functions/vcondition/tur
 execute as @e[type=marker,name="会議"] at @s run particle dust 1 1 1 1 ~ ~ ~ 0.225 0.1 0.225 0 5
 
 # ur
-execute as @e[type=marker,name="会議"] at @s if entity @a[distance=0..1,scores={ur=1..}] run function ww:role/ur/
+execute as @e[type=marker,name="会議",limit=1,sort=random] at @s if entity @a[distance=0..1] run function ww:role/ur/
 
 # kr
-execute as @e[type=marker,name="会議"] at @s if entity @a[distance=0..1,scores={kn=1..}] run function ww:role/kr/
+execute as @e[type=marker,name="会議",limit=1,sort=random] at @s if entity @a[distance=0..1] run function ww:role/kr/
 
 # glass_bottle
 execute as @a[nbt={Inventory:[{id:"minecraft:glass_bottle"}]}] if entity @s[tag=!scientist_alive] run function ww:item/clear/item/glass_bottle/ with storage ww:settings shop
@@ -27,8 +27,8 @@ function ww:sub/attribute/wolf/attack_damage/ with storage ww:settings
 function ww:sub/attribute/wolf/max_health/ with storage ww:settings
 
 # item
-execute as @a[tag=entry,predicate=ww:inventory] if score #day_time temporary matches 1.. run function ww:item/clear/day/
-execute as @a[tag=entry,predicate=ww:inventory] if score #night_time temporary matches 1.. run function ww:item/clear/night/
+execute as @a[tag=entry,predicate=ww:inventory] at @s if score #day_time temporary matches 1.. run function ww:item/clear/day/
+execute as @a[tag=entry,predicate=ww:inventory] at @s if score #night_time temporary matches 1.. run function ww:item/clear/night/
 
 # inGroundkill
 kill @e[nbt={inGround:true}]

@@ -11,4 +11,4 @@ execute if entity @s[nbt={Inventory:[{id:"minecraft:armor_stand"}]}] run functio
 execute if entity @s[nbt={Inventory:[{id:"minecraft:end_crystal"}]}] run function ww:item/clear/item/accomplice_eye/ with storage ww:settings shop
 
 # プロビデンスの眼光
-execute if entity @s[nbt={Inventory:[{id:"minecraft:sunflower"}]}] run function ww:item/clear/item/providence/ with storage ww:settings shop
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:sunflower"}},scores={sneak=1..}] run function ww:item/clear/item/providence/ with storage ww:settings shop
