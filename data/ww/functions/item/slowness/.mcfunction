@@ -1,7 +1,6 @@
-execute at @s run playsound minecraft:block.sweet_berry_bush.pick_berries player @a ~ ~ ~ 1 1 0
-effect give @p[distance=0.1..,tag=entry,gamemode=!spectator] slowness 10
-effect give @p[distance=0.1..,tag=entry,gamemode=!spectator] nausea 8
-effect give @p[distance=0.1..,tag=entry,gamemode=!spectator] blindness 6
-clear @s end_rod{CustomModelData:2} 1
-
-advancement revoke @s only ww:slowness
+execute as @p at @s positioned 0.0 0.0 0.0 run summon minecraft:area_effect_cloud ^ ^ ^1 {Tags:["potion_booster"]}
+data modify entity @s Motion set from entity @e[tag=potion_booster,limit=1] Pos
+damage @s 0 minecraft:generic_kill
+tag @s add boost
+kill @e[tag=potion_booster]
+execute as @e[type=potion,nbt={Item:{tag:{ww:throw_potion}}},limit=1,sort=random,tag=!boost] at @s run function ww:item/slowness/
