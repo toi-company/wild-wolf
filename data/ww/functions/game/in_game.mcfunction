@@ -51,3 +51,6 @@ execute if score #day_time temporary matches 0 run function ww:cycle/night/switc
 
 # grenade
 function ww:item/grenade/
+
+# potion_boost
+execute as @e[type=potion,nbt={Item:{tag:{ww:throw_potion}}},limit=1,sort=random,tag=!boost] at @s run function ww:item/slowness/
