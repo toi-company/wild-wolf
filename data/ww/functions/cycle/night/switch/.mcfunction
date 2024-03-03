@@ -11,4 +11,8 @@ title @a title [{"text":"夜になりました","color":"dark_blue","bold":true,
 title @a subtitle [{"text":"- ","color":"gold"},{"score":{"objective": "temporary","name": "#turn"},"color":"gold"},{"text":"日目 -","color":"gold"}]
 tag @a[tag=vampire_alive] add knight
 execute if score #turn temporary matches ..3 run give @a[tag=scientist_alive] glass_bottle 1
+tag @a remove skip
+tag @a[tag=alive] add skip
+scoreboard players reset @a skip
+scoreboard players enable @a[tag=alive] skip
 function ww:cycle/night/skeleton_spawn/

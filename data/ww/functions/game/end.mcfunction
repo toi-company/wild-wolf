@@ -28,7 +28,10 @@ scoreboard players set #temp_game_time_tick temporary 0
 tag @a remove tenkei
 tag @a remove knight
 tag @a remove allergy
+tag @a remove skip
+tag @a remove alive
 team leave @a[tag=entry]
+scoreboard players set #skip temporary 0
 
 execute unless data storage ww: start as @a at @s run playsound ui.toast.challenge_complete player @s
 title @a title "試合終了"

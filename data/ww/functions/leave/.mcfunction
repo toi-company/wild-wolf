@@ -13,4 +13,6 @@ scoreboard players set @s leave 0
 tag @s remove tenkei
 tag @s remove knight
 tag @s remove allergy
+tag @s remove skip
+tag @s remove alive
 team leave @s
