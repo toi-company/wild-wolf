@@ -1,7 +1,7 @@
 scoreboard players set @s death_count 0
 execute if entity @s[tag=entry] run clear @s
-scoreboard players set @s role -1
-scoreboard players set @s player_id -1
+scoreboard players reset @s role
+scoreboard players reset @s player_id
 tag @s remove mad_alive
 tag @s remove wolf_alive
 tag @s remove ctz_alive

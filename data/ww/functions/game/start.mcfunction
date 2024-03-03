@@ -5,6 +5,7 @@ tag @a remove wolf_alive
 tag @a remove mad_alive
 tag @a remove vampire_alive
 tag @a remove scientist_alive
+data modify storage ww: start set value true
 function ww:game/end
 tag @a[tag=entry] add player
 tag @a[tag=entry] add role_player_id

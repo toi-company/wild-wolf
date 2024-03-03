@@ -11,5 +11,7 @@ function ww:cycle/night/switch/
 function ww:shop/data/combat/
 function ww:shop/data/support/
 
+execute as @a at @s run playsound entity.player.levelup player @s
 title @a title "試合開始"
+data remove storage ww: start
 data modify storage ww: in_game set value true

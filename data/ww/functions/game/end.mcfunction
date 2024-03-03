@@ -30,4 +30,5 @@ tag @a remove knight
 tag @a remove allergy
 team leave @a[tag=entry]
 
+execute unless data storage ww: start as @a at @s run playsound ui.toast.challenge_complete player @s
 title @a title "試合終了"
