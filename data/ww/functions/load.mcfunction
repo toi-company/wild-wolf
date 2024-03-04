@@ -29,6 +29,8 @@ scoreboard objectives add kn_cooltime dummy
 scoreboard objectives add leave custom:leave_game
 scoreboard objectives add stun dummy
 scoreboard objectives add skip trigger "スキップ"
+scoreboard objectives add bottle used:experience_bottle
+scoreboard objectives add arsenic_timer_tick dummy
 
 # scoreboard players
 scoreboard players add #day_time temporary 0
@@ -96,7 +98,8 @@ execute if score #create temporary matches 0 run scoreboard players set #shop_em
 execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_damage_potion_price temporary 3
 execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_invisible_potion_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_slowness_potion_price temporary 2
-execute if score #create temporary matches 0 run scoreboard players set #skeleton_max_set temporary 50
+execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_arsemic_price temporary 5
+execute if score #create temporary matches 0 run scoreboard players set #skeleton_max_set temporary 100
 
 execute if score #create temporary matches 0 run scoreboard players add #create temporary 1
 

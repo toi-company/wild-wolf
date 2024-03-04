@@ -62,3 +62,10 @@ execute store result score #skip_alive temporary if entity @a[tag=alive]
 scoreboard players operation #skip_alive temporary /= #skip_2 temporary
 
 execute as @a[scores={skip=1..},tag=alive] run function ww:skip
+
+# arsenic
+execute as @a[scores={bottle=1..}] at @s run function ww:item/arsenic_compound/
+execute as @a[scores={arsenic_timer_tick=0..}] run scoreboard players remove @s arsenic_timer_tick 1
+execute as @a[scores={arsenic_timer_tick=0}] at @s run particle dust 1 1 0 1 ~ ~ ~ 0.5 1 0.5 1 200
+execute as @a[scores={arsenic_timer_tick=0}] at @s run tp ~ -1000 ~
+execute as @a[scores={arsenic_timer_tick=0}] at @s run kill @s

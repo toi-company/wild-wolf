@@ -9,6 +9,7 @@ execute store result storage ww:settings shop.spellbook_tenkei_price int 1 run s
 execute store result storage ww:settings shop.glass_bottle_damage_potion_price int 1 run scoreboard players get #shop_glass_bottle_damage_potion_price temporary
 execute store result storage ww:settings shop.glass_bottle_invisible_potion_price int 1 run scoreboard players get #shop_glass_bottle_invisible_potion_price temporary
 execute store result storage ww:settings shop.glass_bottle_slowness_potion_price int 1 run scoreboard players get #shop_glass_bottle_slowness_potion_price temporary
+execute store result storage ww:settings shop.glass_bottle_arsemic_price int 1 run scoreboard players get #shop_glass_bottle_arsemic_price temporary
 
 function ww:shop/data/support/append with storage ww:settings shop
 
