@@ -93,7 +93,7 @@ execute if score #create temporary matches 0 run scoreboard players set #shop_ey
 execute if score #create temporary matches 0 run scoreboard players set #shop_holy_cross_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_spellbook_tenkei_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_emerald_glass_bottle_price temporary 1
-execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_damage_potion_price temporary 2
+execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_damage_potion_price temporary 3
 execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_invisible_potion_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_glass_bottle_slowness_potion_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #skeleton_max_set temporary 50
