@@ -15,5 +15,9 @@ tag @a remove skip
 tag @a[tag=alive] add skip
 scoreboard players reset @a skip
 scoreboard players enable @a[tag=alive] skip
+tag @a remove skip
+tag @a[tag=alive] add skip
+scoreboard players reset @a skip
+scoreboard players enable @a[tag=alive] skip
 scoreboard players set #skip temporary 0
 function ww:cycle/night/skeleton_spawn/
