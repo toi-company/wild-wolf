@@ -1,5 +1,5 @@
 # hostタグ付与
-execute unless entity @a[tag=host] run tag @a add host
+execute unless entity @a[tag=host] run tag @s add host
 
 # bossbar
 bossbar add day_time {"bold":true,"color":"yellow","italic":false,"text":"DAY TIME"}
