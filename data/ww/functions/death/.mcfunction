@@ -10,3 +10,4 @@ tag @s remove knight
 tag @s remove allergy
 tag @s remove skip
 tag @s remove alive
+scoreboard players set @s arsenic_timer_tick 0
