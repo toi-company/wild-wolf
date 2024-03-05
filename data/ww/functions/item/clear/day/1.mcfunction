@@ -12,3 +12,6 @@ execute if entity @s[nbt={Inventory:[{id:"minecraft:end_crystal"}]}] run functio
 
 # プロビデンスの眼光
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:sunflower"}},scores={sneak=1..}] run function ww:item/clear/item/providence/ with storage ww:settings shop
+
+# 霊媒師の遺灰
+execute if entity @s[nbt={Inventory:[{id:"minecraft:gunpowder"}]}] run function ww:item/clear/item/medium/

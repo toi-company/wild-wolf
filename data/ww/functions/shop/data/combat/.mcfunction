@@ -5,6 +5,5 @@ execute store result storage ww:settings shop.skeleton_sword_price int 1 run sco
 execute store result storage ww:settings shop.stun_price int 1 run scoreboard players get #shop_stun_price temporary
 execute store result storage ww:settings shop.wolf_axe_price int 1 run scoreboard players get #shop_wolf_axe_price temporary
 execute store result storage ww:settings shop.emerald_glass_bottle_price int 1 run scoreboard players get #shop_emerald_glass_bottle_price temporary
-execute store result storage ww:settings shop.skeleton_sword_damage int 1 run data get storage ww:settings skeleton_health
 
 function ww:shop/data/combat/append with storage ww:settings shop

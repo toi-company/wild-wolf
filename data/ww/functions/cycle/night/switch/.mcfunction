@@ -21,4 +21,5 @@ tag @a[tag=alive] add skip
 scoreboard players reset @a skip
 scoreboard players enable @a[tag=alive] skip
 scoreboard players set #skip temporary 0
+execute unless score #turn temporary matches ..1 run tag @a remove knight
 function ww:cycle/night/skeleton_spawn/

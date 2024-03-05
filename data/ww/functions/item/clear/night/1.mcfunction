@@ -15,3 +15,6 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:sunflower"}},scores={sneak
 
 # 天啓の呪符
 execute if entity @s[nbt={Inventory:[{id:"minecraft:paper"}]}] run function ww:item/clear/item/tenkei/ with storage shop
+
+# 霊媒師の遺灰
+execute if entity @s[nbt={Inventory:[{id:"minecraft:gunpowder"}]}] run function ww:item/clear/item/medium/

@@ -1,6 +1,7 @@
 execute store result storage ww:settings shop.speed_potion_price int 1 run scoreboard players get #shop_speed_potion_price temporary
 execute store result storage ww:settings shop.invisible_potion_price int 1 run scoreboard players get #shop_invisible_potion_price temporary
 execute store result storage ww:settings shop.divination_price int 1 run scoreboard players get #shop_divination_price temporary
+execute store result storage ww:settings shop.medium_price int 1 run scoreboard players get #shop_medium_price temporary
 execute store result storage ww:settings shop.knight_price int 1 run scoreboard players get #shop_knight_price temporary
 execute store result storage ww:settings shop.accomplice_eye_price int 1 run scoreboard players get #shop_accomplice_eye_price temporary
 execute store result storage ww:settings shop.holy_cross_price int 1 run scoreboard players get #shop_holy_cross_price temporary

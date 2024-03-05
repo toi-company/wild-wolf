@@ -89,9 +89,10 @@ execute if score #create temporary matches 0 run scoreboard players set #shop_wo
 execute if score #create temporary matches 0 run scoreboard players set #shop_speed_potion_price temporary 1
 execute if score #create temporary matches 0 run scoreboard players set #shop_invisible_potion_price temporary 4
 execute if score #create temporary matches 0 run scoreboard players set #shop_divination_price temporary 5
+execute if score #create temporary matches 0 run scoreboard players set #shop_medium_price temporary 4
 execute if score #create temporary matches 0 run scoreboard players set #shop_knight_price temporary 4
 execute if score #create temporary matches 0 run scoreboard players set #shop_accomplice_eye_price temporary 5
-execute if score #create temporary matches 0 run scoreboard players set #shop_eye_of_providence_price temporary 4
+execute if score #create temporary matches 0 run scoreboard players set #shop_eye_of_providence_price temporary 8
 execute if score #create temporary matches 0 run scoreboard players set #shop_holy_cross_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_spellbook_tenkei_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_emerald_glass_bottle_price temporary 1

@@ -7,6 +7,9 @@ function ww:functions/vcondition/
 execute if data storage condition: timer run function ww:functions/vcondition/timer
 execute if data storage condition: turn run function ww:functions/vcondition/turn
 
+# 初日無敵
+execute if score #turn temporary matches ..1 run tag @a add knight
+
 # particle
 execute as @e[type=marker,name="会議"] at @s run particle dust 1 1 1 1 ~ ~ ~ 0.225 0.1 0.225 0 5
 
