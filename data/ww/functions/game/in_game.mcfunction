@@ -56,7 +56,7 @@ execute if score #day_time temporary matches 0 run function ww:cycle/night/switc
 function ww:item/grenade/
 
 # potion_boost
-execute as @e[type=potion,nbt={Item:{tag:{ww:throw_potion}}},limit=1,sort=random,tag=!boost] at @s run function ww:item/slowness/
+execute as @e[type=potion,nbt={Item:{tag:{ww:throw_potion}}},limit=1,sort=random,tag=!boost] at @s anchored eyes run function ww:item/slowness/
 
 # skip
 scoreboard players set #skip_2 temporary 2
