@@ -59,11 +59,7 @@ function ww:item/grenade/
 execute as @e[type=potion,nbt={Item:{tag:{ww:throw_potion}}},limit=1,sort=random,tag=!boost] at @s anchored eyes run function ww:item/slowness/
 
 # skip
-scoreboard players set #skip_2 temporary 2
 execute store result score #skip_alive temporary if entity @a[tag=alive]
-#scoreboard players operation #skip_alive temporary = #skip_alive_all temporary
-scoreboard players operation #skip_alive temporary /= #skip_2 temporary
-
 execute as @a[scores={skip=1..},tag=alive] run function ww:skip
 
 # arsenic
