@@ -31,12 +31,14 @@ scoreboard objectives add stun dummy
 scoreboard objectives add skip trigger "スキップ"
 scoreboard objectives add bottle used:experience_bottle
 scoreboard objectives add arsenic_timer_tick dummy
+scoreboard objectives add game_count dummy
 
 # scoreboard players
 scoreboard players add #day_time temporary 0
 scoreboard players add #night_time temporary 0
 scoreboard players add @a role 0
 scoreboard players add #reserve_timer_set temporary 0
+scoreboard players add #count game_count 0
 execute if score #reserve_timer_set temporary matches 0 run scoreboard players set #reserve_timer_set temporary 15
 execute store result storage ww:settings reserve_timer int 1 run scoreboard players get #reserve_timer_set temporary
 

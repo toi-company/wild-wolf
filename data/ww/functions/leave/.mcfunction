@@ -9,6 +9,7 @@ tag @s remove vampire_alive
 tag @s remove scientist_alive
 scoreboard players set @s ur 0
 gamemode adventure
+execute if data storage ww: in_game run gamemode spectator @s
 scoreboard players set @s leave 0
 tag @s remove tenkei
 tag @s remove knight
@@ -16,3 +17,4 @@ tag @s remove allergy
 tag @s remove skip
 tag @s remove alive
 team leave @s
+scoreboard players operation @s game_count = #count game_count
