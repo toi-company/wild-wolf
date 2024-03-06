@@ -10,8 +10,8 @@ summon marker ^ ^ ^0.6 {Tags:["ww.arsenic"]}
 summon marker ^ ^ ^0.7 {Tags:["ww.arsenic"]}
 summon marker ^ ^ ^0.8 {Tags:["ww.arsenic"]}
 summon marker ^ ^ ^0.9 {Tags:["ww.arsenic"]}
-execute store result score #arsemic_luck temporary run random value 1..2
+execute store result score #arsemic_luck temporary run random value 1..10
 execute if score #turn temporary matches ..1 run scoreboard players set #arsemic_luck temporary 0
-execute if score #arsemic_luck temporary matches 1 as @e[tag=ww.arsenic] at @s as @a[dy=0,tag=!arsenic_use] positioned ^ ^ ^-0.9 as @s[dy=0] store result score @s arsenic_timer_tick run random value 600..900
+execute if score #arsemic_luck temporary matches 1..8 as @e[tag=ww.arsenic] at @s as @a[dy=0,tag=!arsenic_use] positioned ^ ^ ^-0.9 as @s[dy=0] store result score @s arsenic_timer_tick run random value 600..900
 kill @e[type=marker,nbt={Tags:["ww.arsenic"]}]
 tag @s remove arsenic_use

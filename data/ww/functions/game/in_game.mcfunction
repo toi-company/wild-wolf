@@ -42,7 +42,7 @@ scoreboard players remove @a[scores={kn_cooltime=1..}] kn_cooltime 1
 
 #resistance
 execute as @a[tag=knight] run effect give @s resistance 1 255 true
-execute as @a[tag=!knight] run effect clear @s resistance
+execute as @a[tag=!knight,tag=!vampire_alive] run effect clear @s resistance
 
 # cycle
 execute if score #night_time temporary matches 0.. run function ww:cycle/night/active/
