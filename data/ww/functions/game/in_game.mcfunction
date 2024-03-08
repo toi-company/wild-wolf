@@ -1,4 +1,3 @@
-
 # death
 execute if entity @e[scores={death_count=1..}] as @e[scores={death_count=1..}] run function ww:death/
 
