@@ -15,3 +15,4 @@ $effect give @a saturation $(reserve_timer) 255 true
 $effect give @a regeneration $(reserve_timer) 255 true
 $scoreboard players set #reserve_timer temporary $(reserve_timer)
 scoreboard players set #reserve_timer_tick temporary 20
+function ww:sub/attribute/wolf/max_health/ with storage ww:settings

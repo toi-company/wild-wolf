@@ -25,10 +25,6 @@ execute as @a[nbt={Inventory:[{id:"minecraft:glass_bottle"}]}] if entity @s[tag=
 # damage_potion
 execute as @a[nbt={active_effects:[{id:"minecraft:unluck",amplifier:20b}]}] run function ww:item/damage_potion/
 
-# wolf attribute
-function ww:sub/attribute/wolf/attack_damage/ with storage ww:settings
-function ww:sub/attribute/wolf/max_health/ with storage ww:settings
-
 # item
 execute as @a[tag=entry,predicate=ww:inventory] at @s if score #day_time temporary matches 1.. run function ww:item/clear/day/
 execute as @a[tag=entry,predicate=ww:inventory] at @s if score #night_time temporary matches 1.. run function ww:item/clear/night/

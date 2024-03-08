@@ -1,5 +1,7 @@
 # hostタグ付与
-execute unless entity @a[tag=host] run tag @s add host
+scoreboard players add #host temporary 0
+execute unless score #host temporary matches 1.. run tag @a add host
+execute unless score #host temporary matches 1.. run scoreboard players set #host temporary 1
 
 # bossbar
 bossbar add day_time {"bold":true,"color":"yellow","italic":false,"text":"DAY TIME"}
