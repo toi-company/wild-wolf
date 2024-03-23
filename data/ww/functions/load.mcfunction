@@ -34,6 +34,7 @@ scoreboard objectives add skip trigger "スキップ"
 scoreboard objectives add bottle used:experience_bottle
 scoreboard objectives add arsenic_timer_tick dummy
 scoreboard objectives add game_count dummy
+scoreboard objectives add wolf_axe_cooltime dummy
 
 # scoreboard players
 scoreboard players add #day_time temporary 0

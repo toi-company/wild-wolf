@@ -50,6 +50,12 @@ execute if score #day_time temporary matches 0 run function ww:cycle/night/switc
 # grenade
 function ww:item/grenade/
 
+# barrier
+kill @e[type=item,name="バリアブロック"]
+
+# wolf_axe
+execute as @a[tag=wolf_axe_cooltime] run function ww:item/wolf_axe/cooltime
+
 # potion_boost
 execute as @e[type=potion,nbt={Item:{tag:{ww:throw_potion}}},limit=1,sort=random,tag=!boost] at @s anchored eyes run function ww:item/slowness/
 

@@ -22,4 +22,5 @@ scoreboard players reset @a skip
 scoreboard players enable @a[tag=alive] skip
 scoreboard players set #skip temporary 0
 execute unless score #turn temporary matches ..1 run tag @a[tag=!vampire_alive] remove knight
+execute as @a[tag=wolf_alive] run function ww:item/wolf_axe/use_enabled
 function ww:cycle/night/skeleton_spawn/
