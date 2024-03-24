@@ -4,6 +4,7 @@ execute store result storage ww:settings shop.divination_price int 1 run scorebo
 execute store result storage ww:settings shop.medium_price int 1 run scoreboard players get #shop_medium_price temporary
 execute store result storage ww:settings shop.knight_price int 1 run scoreboard players get #shop_knight_price temporary
 execute store result storage ww:settings shop.accomplice_eye_price int 1 run scoreboard players get #shop_accomplice_eye_price temporary
+execute store result storage ww:settings shop.backpack_price int 1 run scoreboard players get #shop_backpack_price temporary
 execute store result storage ww:settings shop.holy_cross_price int 1 run scoreboard players get #shop_holy_cross_price temporary
 execute store result storage ww:settings shop.eye_of_providence_price int 1 run scoreboard players get #shop_eye_of_providence_price temporary
 execute store result storage ww:settings shop.spellbook_tenkei_price int 1 run scoreboard players get #shop_spellbook_tenkei_price temporary

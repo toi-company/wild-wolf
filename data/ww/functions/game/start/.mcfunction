@@ -13,6 +13,8 @@ scoreboard players set #2 temporary 2
 scoreboard players operation #day_time temporary /= #2 temporary
 function ww:shop/data/combat/
 function ww:shop/data/support/
+scoreboard players reset @a backpack
+scoreboard players set @a[tag=entry] backpack 0
 
 execute as @a at @s run playsound entity.player.levelup player @s
 title @a title "試合開始"

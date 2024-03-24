@@ -5,7 +5,6 @@ execute store result bossbar night_time max run scoreboard players get #night_ti
 bossbar set day_time players
 bossbar set night_time players @a
 time set 18000
-tellraw @a [{"score":{"objective": "temporary","name": "#turn"}},{"text":"日目の夜がやってきました。"}]
 title @a title [{"text":"夜になりました","color":"dark_blue","bold":true,"italic":false}]
 title @a subtitle [{"text":"- ","color":"gold"},{"score":{"objective": "temporary","name": "#turn"},"color":"gold"},{"text":"日目 -","color":"gold"}]
 tag @a[tag=vampire_alive] add knight

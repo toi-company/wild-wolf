@@ -6,6 +6,7 @@ bossbar set night_time players
 bossbar set day_time players @a
 time set 6000
 scoreboard players add #turn temporary 1
+tellraw @a [{"score":{"objective": "temporary","name": "#turn"}},{"text":"日目の朝がやってきました。"}]
 title @a title [{"text":"昼になりました","color":"yellow","bold":true,"italic":false}]
 title @a subtitle [{"text":"- ","color":"gold"},{"score":{"objective": "temporary","name": "#turn"},"color":"gold"},{"text":"日目 -","color":"gold"}]
 tellraw @a[tag=tenkei] {"text":"天啓の呪符の効果が切れた。"}

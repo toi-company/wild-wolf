@@ -12,3 +12,4 @@ tag @s remove skip
 tag @s remove alive
 tag @s remove wolf_axe_cooltime
 scoreboard players set @s arsenic_timer_tick 0
+scoreboard players reset @s backpack

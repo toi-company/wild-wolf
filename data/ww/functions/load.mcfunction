@@ -35,6 +35,7 @@ scoreboard objectives add bottle used:experience_bottle
 scoreboard objectives add arsenic_timer_tick dummy
 scoreboard objectives add game_count dummy
 scoreboard objectives add wolf_axe_cooltime dummy
+scoreboard objectives add backpack dummy
 
 # scoreboard players
 scoreboard players add #day_time temporary 0
@@ -97,6 +98,7 @@ execute if score #create temporary matches 0 run scoreboard players set #shop_di
 execute if score #create temporary matches 0 run scoreboard players set #shop_medium_price temporary 4
 execute if score #create temporary matches 0 run scoreboard players set #shop_knight_price temporary 4
 execute if score #create temporary matches 0 run scoreboard players set #shop_accomplice_eye_price temporary 5
+execute if score #create temporary matches 0 run scoreboard players set #shop_backpack_price temporary 6
 execute if score #create temporary matches 0 run scoreboard players set #shop_eye_of_providence_price temporary 8
 execute if score #create temporary matches 0 run scoreboard players set #shop_holy_cross_price temporary 2
 execute if score #create temporary matches 0 run scoreboard players set #shop_spellbook_tenkei_price temporary 2

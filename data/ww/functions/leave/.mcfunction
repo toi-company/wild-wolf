@@ -17,4 +17,5 @@ tag @s remove allergy
 tag @s remove skip
 tag @s remove alive
 team leave @s
+scoreboard players reset @s backpack
 scoreboard players operation @s game_count = #count game_count

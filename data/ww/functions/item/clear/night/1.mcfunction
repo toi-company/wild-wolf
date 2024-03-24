@@ -18,3 +18,6 @@ execute if entity @s[nbt={Inventory:[{id:"minecraft:paper"}]}] run function ww:i
 
 # 霊媒師の遺灰
 execute if entity @s[nbt={Inventory:[{id:"minecraft:gunpowder"}]}] run function ww:item/clear/item/medium/
+
+# バックパック
+execute if entity @s[nbt={Inventory:[{id:"minecraft:chest",tag:{CustomModelData:2}}]}] run function ww:item/clear/item/backpack/ with storage ww:settings shop

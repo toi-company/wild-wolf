@@ -1,9 +1,3 @@
-execute if data entity @s Inventory[{Slot:6b}] unless entity @s[nbt={Inventory:[{Slot:6b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:6}
-execute if data entity @s Inventory[{Slot:7b}] unless entity @s[nbt={Inventory:[{Slot:7b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:7}
-execute if data entity @s Inventory[{Slot:8b}] unless entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:8}
-execute if data entity @s Inventory[{Slot:9b}] unless entity @s[nbt={Inventory:[{Slot:9b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:9}
-execute if data entity @s Inventory[{Slot:10b}] unless entity @s[nbt={Inventory:[{Slot:10b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:10}
-execute if data entity @s Inventory[{Slot:11b}] unless entity @s[nbt={Inventory:[{Slot:11b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:11}
 execute if data entity @s Inventory[{Slot:12b}] unless entity @s[nbt={Inventory:[{Slot:12b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:12}
 execute if data entity @s Inventory[{Slot:13b}] unless entity @s[nbt={Inventory:[{Slot:13b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:13}
 execute if data entity @s Inventory[{Slot:14b}] unless entity @s[nbt={Inventory:[{Slot:14b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:14}
@@ -28,12 +22,7 @@ execute if data entity @s Inventory[{Slot:32b}] unless entity @s[nbt={Inventory:
 execute if data entity @s Inventory[{Slot:33b}] unless entity @s[nbt={Inventory:[{Slot:33b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:33}
 execute if data entity @s Inventory[{Slot:34b}] unless entity @s[nbt={Inventory:[{Slot:34b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:34}
 execute if data entity @s Inventory[{Slot:35b}] unless entity @s[nbt={Inventory:[{Slot:35b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:35}
-item replace entity @s hotbar.6 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
-item replace entity @s hotbar.7 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
-item replace entity @s hotbar.8 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
-item replace entity @s inventory.0 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
-item replace entity @s inventory.1 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
-item replace entity @s inventory.2 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
+execute if data entity @s Inventory[{Slot:-106b}] unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:chest"}]}] run function ww:item/barrier/drop {Slot:-106}
 item replace entity @s inventory.3 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
 item replace entity @s inventory.4 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
 item replace entity @s inventory.5 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
@@ -58,13 +47,19 @@ item replace entity @s inventory.23 with black_stained_glass_pane{ww:locked_glas
 item replace entity @s inventory.24 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
 item replace entity @s inventory.25 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
 item replace entity @s inventory.26 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
+item replace entity @s weapon.offhand with chest{ww:locked_glass,display:{Name:'"バックパック"'}} 1
 execute if data entity @s Inventory[{Slot:0b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s hotbar.0 with air
 execute if data entity @s Inventory[{Slot:1b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s hotbar.1 with air
 execute if data entity @s Inventory[{Slot:2b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s hotbar.2 with air
 execute if data entity @s Inventory[{Slot:3b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s hotbar.3 with air
 execute if data entity @s Inventory[{Slot:4b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s hotbar.4 with air
 execute if data entity @s Inventory[{Slot:5b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s hotbar.5 with air
-execute if data entity @s Inventory[{Slot:-106b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s weapon.offhand with air
+execute if data entity @s Inventory[{Slot:6b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s hotbar.6 with air
+execute if data entity @s Inventory[{Slot:7b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s hotbar.7 with air
+execute if data entity @s Inventory[{Slot:8b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s hotbar.8 with air
+execute if data entity @s Inventory[{Slot:9b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s inventory.0 with air
+execute if data entity @s Inventory[{Slot:10b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s inventory.1 with air
+execute if data entity @s Inventory[{Slot:11b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s inventory.2 with air
 execute if data entity @s Inventory[{Slot:0b,id:"minecraft:chest",tag:{ww:locked_glass}}] run item replace entity @s hotbar.0 with air
 execute if data entity @s Inventory[{Slot:1b,id:"minecraft:chest",tag:{ww:locked_glass}}] run item replace entity @s hotbar.1 with air
 execute if data entity @s Inventory[{Slot:2b,id:"minecraft:chest",tag:{ww:locked_glass}}] run item replace entity @s hotbar.2 with air
