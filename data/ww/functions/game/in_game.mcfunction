@@ -50,8 +50,8 @@ execute if score #day_time temporary matches 0 run function ww:cycle/night/switc
 # grenade
 function ww:item/grenade/
 
-# barrier
-kill @e[type=item,name="バリアブロック"]
+# black_stained_glass_pane
+kill @e[type=item,nbt={Item:{tag:{ww:locked_glass}}}]
 
 # wolf_axe
 execute as @a[tag=wolf_axe_cooltime] run function ww:item/wolf_axe/cooltime
