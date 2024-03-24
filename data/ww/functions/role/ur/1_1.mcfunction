@@ -1,6 +1,5 @@
-$execute store result storage ur: role int 1 run scoreboard players get @p[scores={player_id=$(id)}] role
 $execute unless score #day_time temporary matches 0.. as @a[distance=0..1] unless score @s kn matches 1.. if score @s ur matches 0 run title @s actionbar [{"selector":"@e[scores={player_id=$(id)}]"}]
-execute unless score #day_time temporary matches 0.. as @a[distance=0..1] unless score @s kn matches 1.. if score @s ur matches 1.. run function ww:role/ur/3 with storage ur:
+$execute unless score #day_time temporary matches 0.. as @a[distance=0..1] unless score @s kn matches 1.. if score @s ur matches 1.. run title @s actionbar [{"selector":"@e[scores={player_id=$(id)}]"},{"color":"blue","text":" 占い可能人数:"},{"color":"blue","score":{"name":"@s","objective":"ur"}},{"color":"blue","text":"人"}]
 $execute if score #day_time temporary matches 0.. as @a[distance=0..1] unless score @s kn matches 1.. run title @s actionbar [{"selector":"@e[scores={player_id=$(id)}]"}]
 $data modify storage wherewolf: roles[$(role)].ur_id set value $(id)
 $data modify storage wherewolf: roles[$(role)].ur_role set value $(role)
