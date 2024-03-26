@@ -5,12 +5,12 @@ execute if data entity @s Inventory[{Slot:33b}] unless entity @s[nbt={Inventory:
 execute if data entity @s Inventory[{Slot:34b}] unless entity @s[nbt={Inventory:[{Slot:34b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:34}
 execute if data entity @s Inventory[{Slot:35b}] unless entity @s[nbt={Inventory:[{Slot:35b,id:"minecraft:black_stained_glass_pane"}]}] run function ww:item/barrier/drop {Slot:35}
 execute if data entity @s Inventory[{Slot:-106b}] unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:chest"}]}] run function ww:item/barrier/drop {Slot:-106}
-item replace entity @s inventory.21 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
-item replace entity @s inventory.22 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
-item replace entity @s inventory.23 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
-item replace entity @s inventory.24 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
-item replace entity @s inventory.25 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
-item replace entity @s inventory.26 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'}}
+item replace entity @s inventory.21 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'},AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-100,Operation:0,UUID:[I;557344156,1667908299,-1319654535,-1477474944],Slot:"mainhand"}]}
+item replace entity @s inventory.22 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'},AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-100,Operation:0,UUID:[I;557344156,1667908299,-1319654535,-1477474944],Slot:"mainhand"}]}
+item replace entity @s inventory.23 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'},AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-100,Operation:0,UUID:[I;557344156,1667908299,-1319654535,-1477474944],Slot:"mainhand"}]}
+item replace entity @s inventory.24 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'},AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-100,Operation:0,UUID:[I;557344156,1667908299,-1319654535,-1477474944],Slot:"mainhand"}]}
+item replace entity @s inventory.25 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'},AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-100,Operation:0,UUID:[I;557344156,1667908299,-1319654535,-1477474944],Slot:"mainhand"}]}
+item replace entity @s inventory.26 with black_stained_glass_pane{ww:locked_glass,display:{Name:'""'},AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-100,Operation:0,UUID:[I;557344156,1667908299,-1319654535,-1477474944],Slot:"mainhand"}]}
 item replace entity @s weapon.offhand with chest{ww:locked_glass,display:{Name:'"バックパック"'}} 4
 execute if data entity @s Inventory[{Slot:0b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s hotbar.0 with air
 execute if data entity @s Inventory[{Slot:1b,id:"minecraft:black_stained_glass_pane",tag:{ww:locked_glass}}] run item replace entity @s hotbar.1 with air

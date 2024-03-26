@@ -1,0 +1,2 @@
+summon minecraft:armor_stand ~ ~-1.45 ~ {Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:skeleton_skull",Count:1b}],Tags:["grave","grave_temp"],Invisible:1b,NoGravity:1b}
+$data modify entity @e[limit=1,tag=grave_temp] Rotation[0] set value $(rotation)f

@@ -1,8 +1,9 @@
 # death
-execute if entity @e[scores={death_count=1..}] as @e[scores={death_count=1..}] run function ww:death/
+execute as @r[scores={death_count=1..}] run tag @s add death
+execute as @e[tag=death] run function ww:death/
 
 # vcondition
-function ww:functions/vcondition/
+#function ww:functions/vcondition/
 execute if data storage condition: timer run function ww:functions/vcondition/timer
 execute if data storage condition: turn run function ww:functions/vcondition/turn
 
