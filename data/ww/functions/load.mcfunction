@@ -36,6 +36,8 @@ scoreboard objectives add arsenic_timer_tick dummy
 scoreboard objectives add game_count dummy
 scoreboard objectives add wolf_axe_cooltime dummy
 scoreboard objectives add backpack dummy
+scoreboard objectives add health health
+scoreboard objectives add blood_timer dummy
 
 # scoreboard players
 scoreboard players add #day_time temporary 0

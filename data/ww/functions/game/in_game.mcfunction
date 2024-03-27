@@ -3,7 +3,7 @@ execute as @r[scores={death_count=1..}] run tag @s add death
 execute as @e[tag=death] run function ww:death/
 
 # vcondition
-#function ww:functions/vcondition/
+function ww:functions/vcondition/
 execute if data storage condition: timer run function ww:functions/vcondition/timer
 execute if data storage condition: turn run function ww:functions/vcondition/turn
 
@@ -35,6 +35,12 @@ kill @e[nbt={inGround:true}]
 # cooltime
 scoreboard players remove @a[scores={ur_cooltime=1..}] ur_cooltime 1
 scoreboard players remove @a[scores={kn_cooltime=1..}] kn_cooltime 1
+
+# 血痕
+execute as @a[scores={health=..10},tag=alive] unless entity @s[scores={blood_timer=1..}] run tag @s add blood
+execute as @a[tag=alive,scores={blood_timer=0}] at @s run summon area_effect_cloud ~ ~-0.05 ~ {Particle:"dust 0.439 0.000 0.000 1.5 ",ReapplicationDelay:1,Radius:0.1f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:18,DurationOnUse:0,Age:0,WaitTime:0}
+scoreboard players remove @a[scores={blood_timer=0..}] blood_timer 1
+execute as @a[tag=alive,scores={health=..10},tag=blood] store result score @s blood_timer run random value 0..4
 
 #resistance
 execute as @a[tag=knight] run effect give @s resistance 1 255 true
@@ -68,6 +74,6 @@ execute as @a[scores={skip=1..},tag=alive] run function ww:skip
 execute as @a[scores={bottle=1..}] at @s anchored eyes run function ww:item/arsenic_compound/
 execute as @a[scores={arsenic_timer_tick=0..}] run scoreboard players remove @s arsenic_timer_tick 1
 execute as @a[scores={arsenic_timer_tick=0..}] at @s run particle minecraft:dust 1 0 1 1 ~ ~2.5 ~ 0.01 0.01 0.01 0 1
-execute as @a[scores={arsenic_timer_tick=0}] at @s run particle dust 1 1 0 1 ~ ~ ~ 0.5 1 0.5 1 200
+execute as @a[scores={arsenic_timer_tick=0}] at @s run particle dust 1 1 0 1 ~ ~ ~ 0.3 1 0.3 1 200
 execute as @a[scores={arsenic_timer_tick=0}] at @s run tp ~ -1000 ~
 execute as @a[scores={arsenic_timer_tick=0}] at @s run kill @s
