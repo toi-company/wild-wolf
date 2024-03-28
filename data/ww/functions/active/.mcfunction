@@ -18,6 +18,6 @@ scoreboard players add @a ur_cooltime 0
 scoreboard players add @a leave 0
 
 # leave
-execute as @a if score @s leave matches 1.. unless score @s game_count = #count game_count run function ww:leave/
-execute as @a if score @s leave matches 1.. if data storage ww: in_game run scoreboard players set @s leave 0
-execute as @a if score @s leave matches 1.. unless data storage ww: in_game run function ww:leave/
+execute as @a[scores={leave=1..}] unless score @s game_count = #count game_count run function ww:leave/
+execute as @a[scores={leave=1..}] if data storage ww: in_game run scoreboard players set @s leave 0
+execute as @a[scores={leave=1..}] unless data storage ww: in_game run function ww:leave/
