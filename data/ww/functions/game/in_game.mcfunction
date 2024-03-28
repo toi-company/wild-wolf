@@ -37,10 +37,10 @@ scoreboard players remove @a[scores={ur_cooltime=1..}] ur_cooltime 1
 scoreboard players remove @a[scores={kn_cooltime=1..}] kn_cooltime 1
 
 # 血痕
-execute as @a[scores={health=..10},tag=alive] unless entity @s[scores={blood_timer=1..}] run tag @s add blood
+execute as @a[scores={health=..35},tag=alive] unless entity @s[scores={blood_timer=1..}] run tag @s add blood
 execute as @a[tag=alive,scores={blood_timer=0}] at @s run summon area_effect_cloud ~ ~-0.05 ~ {Particle:"dust 0.439 0.000 0.000 1.5 ",ReapplicationDelay:1,Radius:0.1f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:18,DurationOnUse:0,Age:0,WaitTime:0}
 scoreboard players remove @a[scores={blood_timer=0..}] blood_timer 1
-execute as @a[tag=alive,scores={health=..10},tag=blood] store result score @s blood_timer run random value 0..4
+execute as @a[tag=alive,scores={health=..35},tag=blood] store result score @s blood_timer run random value 0..4
 
 #resistance
 execute as @a[tag=knight] run effect give @s resistance 1 255 true
